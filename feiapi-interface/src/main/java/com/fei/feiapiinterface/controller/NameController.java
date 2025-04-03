@@ -1,7 +1,7 @@
 package com.fei.feiapiinterface.controller;
 
-import com.fei.feiapiinterface.model.User;
-import com.fei.feiapiinterface.utils.SignUtils;
+import com.fei.feiapiclientsdk.model.User;
+import com.fei.feiapiclientsdk.utils.SignUtils;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;

@@ -1,4 +1,4 @@
-package com.fei.feiapiinterface.model;
+package com.fei.feiapiclientsdk.model;
 
 import lombok.Data;
 

@@ -1,20 +1,17 @@
-package com.fei.feiapiinterface.client;
+package com.fei.feiapiclientsdk.client;
 
 import cn.hutool.core.util.RandomUtil;
-import cn.hutool.crypto.digest.DigestAlgorithm;
-import cn.hutool.crypto.digest.Digester;
 import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpResponse;
 import cn.hutool.http.HttpUtil;
 import cn.hutool.json.JSONUtil;
-import com.fei.feiapiinterface.model.User;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
+import com.fei.feiapiclientsdk.model.User;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.fei.feiapiinterface.utils.SignUtils.genSign;
+import static com.fei.feiapiclientsdk.utils.SignUtils.genSign;
+
 
 /**
  * 调用第三方接口的客户端
@@ -32,7 +29,7 @@ public class FeiApiClient {
         this.secretKey = secretKey;
     }
 
-    public String getNameByGet(@RequestParam String name) {
+    public String getNameByGet(String name) {
         //可以单独传入http参数，这样参数会自动做URL编码，拼接在URL中
         HashMap<String, Object> paramMap = new HashMap<>();
         paramMap.put("name", name);
@@ -42,7 +39,7 @@ public class FeiApiClient {
         return result;
     }
 
-    public String getNameByPost(@RequestParam String name) {
+    public String getNameByPost(String name) {
         //可以单独传入http参数，这样参数会自动做URL编码，拼接在URL中
         HashMap<String, Object> paramMap = new HashMap<>();
         paramMap.put("name", name);
@@ -66,7 +63,7 @@ public class FeiApiClient {
     }
 
 
-    public String getUsernameByPost(@RequestBody User user) {
+    public String getUsernameByPost(User user) {
         String json = JSONUtil.toJsonStr(user);
         HttpResponse httpResponse = HttpRequest.post("http://localhost:8123/api/name/user")
                 .addHeaders(getHeaderMap(json))
