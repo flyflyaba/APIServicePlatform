@@ -3,8 +3,7 @@ package com.fei.project.constant;
 /**
  * 通用常量
  *
- * @author <a href="https://github.com/">fei</a>
- * 
+ * @author fei
  */
 public interface CommonConstant {
 
@@ -17,5 +16,4 @@ public interface CommonConstant {
      * 降序
      */
     String SORT_ORDER_DESC = " descend";
-    
 }

@@ -1,10 +1,9 @@
 package com.fei.project.common;
 
 /**
- * 自定义错误码
+ * 错误码
  *
- * @author <a href="https://github.com/">fei</a>
- * 
+ * @author fei
  */
 public enum ErrorCode {
 

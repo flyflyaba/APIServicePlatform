@@ -1,17 +1,16 @@
 package com.fei.project.common;
 
-import java.io.Serializable;
 import lombok.Data;
+
+import java.io.Serializable;
 
 /**
  * 删除请求
  *
- * @author <a href="https://github.com/">fei</a>
- * 
+ * @author fei
  */
 @Data
 public class DeleteRequest implements Serializable {
-
     /**
      * id
      */

@@ -5,14 +5,10 @@ import com.fei.project.common.ErrorCode;
 /**
  * 自定义异常类
  *
- * @author <a href="https://github.com/">fei</a>
- * 
+ * @author fei
  */
 public class BusinessException extends RuntimeException {
 
-    /**
-     * 错误码
-     */
     private final int code;
 
     public BusinessException(int code, String message) {

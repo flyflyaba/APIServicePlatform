@@ -1,13 +1,13 @@
 package com.fei.project.model.dto.user;
 
-import java.io.Serializable;
 import lombok.Data;
 
+import java.io.Serializable;
+
 /**
- * 用户登录请求
+ * 用户登录请求体
  *
- * @author <a href="https://github.com/">fei</a>
- * 
+ * @author fei
  */
 @Data
 public class UserLoginRequest implements Serializable {

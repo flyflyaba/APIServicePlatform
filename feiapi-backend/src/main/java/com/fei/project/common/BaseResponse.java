@@ -1,14 +1,14 @@
 package com.fei.project.common;
 
-import java.io.Serializable;
 import lombok.Data;
+
+import java.io.Serializable;
 
 /**
  * 通用返回类
  *
  * @param <T>
- * @author <a href="https://github.com/">fei</a>
- * 
+ * @author fei
  */
 @Data
 public class BaseResponse<T> implements Serializable {

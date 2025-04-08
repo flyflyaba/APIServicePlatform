@@ -3,8 +3,7 @@ package com.fei.project.common;
 /**
  * 返回工具类
  *
- * @author <a href="https://github.com/">fei</a>
- * 
+ * @author fei
  */
 public class ResultUtils {
 
